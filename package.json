@@ -1,0 +1,30 @@
+{
+  "name": "nodej-lecture",
+  "version": "1.0.0",
+  "description": "Examples for the nodejs lecture",
+  "main": "src/index.js",
+  "scripts": {
+    "start-async": "node src/async.js",
+    "start-event-loop": "node src/event_loop.js",
+    "average_first": "node src/average_first.js",
+    "partitioning_average": "node src/partitioning_average.js",
+    "time_profiling": "time node src/profiling.js",
+    "profiling": "node --prof src/profiling.js",
+    "profiling_next_step": "node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > processed.txt",
+    "performance_timing": "node src/performance_timing.js",
+    "performance_timing_2": "node src/performance_timing_2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idanf2/nodejs-lecture.git"
+  },
+  "author": "idanf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idanf2/nodejs-lecture/issues"
+  },
+  "homepage": "https://github.com/idanf2/nodejs-lecture#readme",
+  "dependencies": {
+    "dateformat": "^3.0.3"
+  }
+}

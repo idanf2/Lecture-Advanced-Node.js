@@ -1,0 +1,98 @@
+Statistical profiling result from isolate-0x103001c00-v8.log, (8997 ticks, 1 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+      2    0.0%          /usr/lib/system/libsystem_platform.dylib
+      2    0.0%          /usr/lib/system/libsystem_kernel.dylib
+      1    0.0%          /usr/lib/system/libsystem_pthread.dylib
+      1    0.0%          /usr/lib/system/libsystem_malloc.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      1    0.0%    0.0%  Script: ~<anonymous> internal/crypto/random.js:1:11
+      1    0.0%    0.0%  LazyCompile: ~toString buffer.js:643:46
+      1    0.0%    0.0%  LazyCompile: ~NativeModule.wrap internal/bootstrap/loaders.js:228:31
+      1    0.0%    0.0%  Builtin: FastNewClosure
+      1    0.0%    0.0%  Builtin: Call_ReceiverIsAny
+
+ [C++]:
+   ticks  total  nonlib   name
+   8894   98.9%   98.9%  T node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+     28    0.3%    0.3%  T node::contextify::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    0.2%    0.2%  T _getattrlistbulk
+      4    0.0%    0.0%  t node::GetBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  T ___pthread_init
+      3    0.0%    0.0%  T v8::internal::Log::MessageBuilder& v8::internal::Log::MessageBuilder::operator<<<char const*>(char const*)
+      2    0.0%    0.0%  T v8::internal::interpreter::BytecodeArrayWriter::Write(v8::internal::interpreter::BytecodeNode*)
+      2    0.0%    0.0%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::PreParser>::ParseFunctionBody(v8::internal::PreParserList<v8::internal::PreParserStatement>, v8::internal::PreParserIdentifier, int, v8::internal::PreParserFormalParameters const&, v8::internal::FunctionKind, v8::internal::FunctionLiteral::FunctionType, bool*)
+      1    0.0%    0.0%  t v8::internal::ParserBase<v8::internal::Parser>::ParseBinaryExpression(int, bool, bool*)
+      1    0.0%    0.0%  t v8::internal::Map::SetBackPointer(v8::internal::Object*, v8::internal::WriteBarrierMode)
+      1    0.0%    0.0%  t v8::internal::LookupIterator::State v8::internal::LookupIterator::LookupInRegularHolder<false>(v8::internal::Map*, v8::internal::JSReceiver*)
+      1    0.0%    0.0%  t v8::internal::FunctionCallbackArguments::Call(v8::internal::CallHandlerInfo*)
+      1    0.0%    0.0%  t v8::internal::CompactionSpace::is_local()
+      1    0.0%    0.0%  t std::__1::deque<v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*, v8::internal::RecyclingZoneAllocator<v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*> >::__add_back_capacity()
+      1    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      1    0.0%    0.0%  T void v8::internal::LookupIterator::Start<false>()
+      1    0.0%    0.0%  T v8_inspector::V8InspectorImpl::~V8InspectorImpl()
+      1    0.0%    0.0%  T v8::internal::interpreter::Interpreter::LookupNameOfBytecodeHandler(v8::internal::Code*)
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeRegisterOptimizer::Materialize(v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*)
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeRegisterOptimizer::GrowRegisterMap(v8::internal::interpreter::Register)
+      1    0.0%    0.0%  T v8::internal::interpreter::BytecodeRegisterOptimizer::Flush()
+      1    0.0%    0.0%  T v8::internal::compiler::Operator::Operator(unsigned short, v8::base::Flags<v8::internal::compiler::Operator::Property, unsigned char>, char const*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long)
+      1    0.0%    0.0%  T v8::internal::TransitionsAccessor::Initialize()
+      1    0.0%    0.0%  T v8::internal::StringTable::LookupKey(v8::internal::Isolate*, v8::internal::StringTableKey*)
+      1    0.0%    0.0%  T v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Parser::BuildAssertIsCoercible(v8::internal::Variable*, v8::internal::ObjectLiteral*)
+      1    0.0%    0.0%  T v8::internal::ParseInfo::ParseInfo(v8::internal::Handle<v8::internal::SharedFunctionInfo>)
+      1    0.0%    0.0%  T v8::internal::Map::TransitionToDataProperty(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, v8::internal::PropertyAttributes, v8::internal::PropertyConstness, v8::internal::Object::StoreFromKeyed)
+      1    0.0%    0.0%  T v8::internal::Map::RawCopy(v8::internal::Handle<v8::internal::Map>, int, int)
+      1    0.0%    0.0%  T v8::internal::HeapIterator::next()
+      1    0.0%    0.0%  T v8::internal::FunctionLiteral::start_position() const
+      1    0.0%    0.0%  T v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::Heap::RootListIndex, int, v8::internal::Object*, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::NewFeedbackVector(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::PretenureFlag)
+      1    0.0%    0.0%  T v8::internal::Factory::AllocateRawWithAllocationSite(v8::internal::Handle<v8::internal::Map>, v8::internal::PretenureFlag, v8::internal::Handle<v8::internal::AllocationSite>)
+      1    0.0%    0.0%  T v8::internal::Deserializer<v8::internal::DefaultDeserializerAllocator>::ReadObject(int, v8::internal::MaybeObject**, v8::internal::HeapObjectReferenceType)
+      1    0.0%    0.0%  T v8::internal::Bitmap::Clear()
+      1    0.0%    0.0%  T std::__1::locale::__global()
+      1    0.0%    0.0%  T node::crypto::RandomBytes(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T _setiopolicy_np
+      1    0.0%    0.0%  T _getpid
+      1    0.0%    0.0%  T _fgets
+
+ [Summary]:
+   ticks  total  nonlib   name
+      5    0.1%    0.1%  JavaScript
+   8985   99.9%   99.9%  C++
+      4    0.0%    0.0%  GC
+      6    0.1%          Shared libraries
+      1    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   8930   99.6%   99.3%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     14    0.2%    0.2%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    0.1%    0.1%  T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  T v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  T v8::internal::Runtime_DeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_NewClosure(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  T v8::internal::Runtime_KeyedLoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   8894   98.9%  T node::crypto::PBKDF2(v8::FunctionCallbackInfo<v8::Value> const&)
+   8894  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+   8894  100.0%      LazyCompile: ~handleError internal/crypto/pbkdf2.js:68:21
+   8894  100.0%        LazyCompile: ~pbkdf2Sync internal/crypto/pbkdf2.js:43:20
+   8894  100.0%          LazyCompile: ~hash /Users/idanf/workspace/nodejs-lecture/nodejs-lecture/src/profiling.js:3:14
+   8894  100.0%            Script: ~<anonymous> /Users/idanf/workspace/nodejs-lecture/nodejs-lecture/src/profiling.js:1:11
+
